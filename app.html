@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#000000">
+<link rel="stylesheet" href="app.css">
+<title>annousments</title>
+</head>
+<body>
+
+  <div id="display">
+    <div id="text">Type below...</div>
+  </div>
+
+  <div class="hint" id="hint">Tap screen to hide/show controls</div>
+
+  <div id="controls">
+    <input id="input" type="text" placeholder="Type your message here..." autocomplete="off" />
+
+    <div class="row">
+      <button id="showBtn" class="primary">Show</button>
+      <button id="clearBtn">Clear</button>
+      <input type="color" id="colorPicker" value="#ffffff" title="Text color" />
+      <input type="color" id="bgPicker" value="#000000" title="Background color" />
+    </div>
+
+    <div class="slider-group">
+      <label>Size</label>
+      <input type="range" id="sizeSlider" min="20" max="400" value="150" />
+    </div>
+
+    <div class="slider-group">
+      <label>Scroll speed</label>
+      <input type="range" id="speedSlider" min="2" max="25" value="8" />
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
