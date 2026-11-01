@@ -10,7 +10,7 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI";
     background: #000;
     color: #fff;
-    height: 100vh;
+    height: 100dvh;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@
     overflow: hidden;
     cursor: pointer;
     position: relative;
+    min-height: 0;
   }
 
   /* Centered (short text) */
@@ -64,12 +65,12 @@
   /* ---- Controls ---- */
   #controls {
     background: #111;
-    padding: 12px;
+    padding: 10px 12px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
     border-top: 1px solid #222;
-    transition: transform 0.25s ease;
+    flex-shrink: 0;
   }
 
   #controls.hidden { transform: translateY(100%); position: absolute; bottom: 0; width: 100%; }
